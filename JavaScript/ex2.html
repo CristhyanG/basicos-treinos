@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = prompt('Qual seu nome?');
+        if(nome != ''){
+            document.write(nome);
+        };
+        
+        var altura = prompt('Sua Altura em centímetros:');
+
+        if(altura != ''){
+            document.write('<div>',altura,'<div>');
+        };
+
+        var peso = prompt('Seu peso em quilos:');
+
+        if(peso != ''){
+            document.write('<div>',peso,'</div>');
+        };
+
+        alturaM = parseFloat(altura) / 100;
+        document.write('sua altura: ', alturaM);
+
+        var M = parseFloat(peso) / (alturaM*alturaM);
+
+       switch(true){
+        case (M<16): document.write(M,'  Baixo peso muito grave') ; 
+        var classificacao = 'Baixo peso muito grave';
+        break;
+
+        case (M>=16 && M<=16.99): document.write(M, ' Baixo peso grave') ;
+        var classificacao='Baixo peso grave ';
+        break;
+
+        case (M>=17 && M<=18.49):  document.write(M, ' Baixo peso');
+        var classificacao='Baixo peso';
+        break;
+
+        case (M>=18.50 && M<=24.99): document.write(M, ' Peso normal');
+        var classificacao='Peso normal';
+        break;
+
+        case (M>=25 && M<=29.99):  document.write(M, ' Sobrepeso');
+        var classificacao='Sobrepeso';
+        break;
+
+        case (M>=30 && M<=34.99): document.write(M, ' Obesidade grau I') ;
+        var classificacao=' Obesidade grau I ';
+        break;
+
+        case (M>=35 && M<= 39.99): document.write(M, ' Obesidade grau II');
+        var classificacao=' Obesidade grau II ';
+        break;
+
+        case (M>=40): document.write(M, ' Obesidade grau III ') ; ;
+        var classificacao=' Obesidade grau III ';
+        break;
+       };
+
+       document.write(nome+' possui índice de massa corporal igual a ',M,', sendo classificado como:'+ classificacao+'.');
+        
+
+
+    </script>
+</body>
+</html>

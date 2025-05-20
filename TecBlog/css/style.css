@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', Heveltica, sans-serif;
+    font-size: 1em;
+    color: #333;
+    background-color: #f0e6e6;
+}
+
+header{
+    background: #f7b600;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;    
+}
+
+#logo{
+    padding: 15px;
+    justify-content: center;
+    font-size: 2.5em;
+    color: #333;
+}
+
+#logo span{
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    list-style: none;
+    width:30%;    
+}
+
+#menu li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#menu li a:hover{
+    background: #fff;
+    color: #f7b600;
+    transition: 0.3s;
+}
+
+#principal{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.corpo-container{
+    /*display: flex;
+    justify-content: center;
+    flex-direction: column;*/
+    float: left;
+    width: 50%;
+    padding: 10px;
+    background: #fff;   
+}
+
+.lateral{
+    float: right;
+    margin-left: 1%;
+    width: 20%;
+    height: min-content;
+}
+
+.lateral h3{
+    color: #333;
+    background: rgb(211, 209, 209);
+    
+    margin-bottom: 10px;
+    padding: 0.5em;
+}
+
+.lateral p{
+    padding: 0.5em;
+}
+.lateral span{
+    color: #f7b600;
+}
+.conteudo-lateral{
+    background: #fff;
+    display: block;
+}
+.conteudo-lateral ul, .conteudo-lateral a{
+    color: #f7b600;
+    text-decoration: none;
+    padding: 10px 15px;
+    
+    list-style: none;
+}
+.conteudo-lateral a:hover{
+    text-decoration: underline;
+}

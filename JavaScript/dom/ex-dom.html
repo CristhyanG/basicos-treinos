@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function manipulador(corDeFundo){
+        document.getElementById('entrada').style.background=corDeFundo
+        
+    }
+    function validador(){
+        caracter = document.getElementById('entrada').value
+        if(caracter.length < 3){
+            document.getElementById('entrada').style.background='#f00'
+
+        }else{
+            document.getElementById('entrada').style.background='#0f0'
+        }
+    }
+</script>
+<body>
+    <input id="entrada" type="text" onfocus="manipulador('#ff0')" onblur="validador()">
+
+</body>
+</html>

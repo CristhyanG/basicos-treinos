@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function modificaCorDeFundo(corDeFundo, w){
+        document.getElementById('quadrado').style.background = corDeFundo;
+        document.getElementById('quadrado').style.width = w;
+    }
+</script>
+<body>
+    <h4>manipulando elemntos</h4>
+
+    <button onclick="modificaCorDeFundo('#f00', '500px')">Red</button>
+    <button onclick="modificaCorDeFundo('#0f0')">Green</button>
+    <button onclick="modificaCorDeFundo('#00f')">Blue</button>
+
+    <hr/>
+
+    <div id="quadrado" style="height: 300px; width: 300px; border: solid black 1px;"></div>
+
+</body>
+</html>

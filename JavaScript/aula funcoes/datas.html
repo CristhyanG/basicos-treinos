@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //jsDate
+
+        var data = new Date();
+
+        document.write(data.getDate())
+        document.write(data.getMonth()+1)//pega o mes de 0 a 11  
+
+        document.write('<br>'+(data.getDate())+ '/0'+(data.getMonth()+1)+'/'+(data.getFullYear()))
+
+        document.write('<hr>');
+
+
+        //teste 1
+        d1 = new Date();
+
+        d2 = new Date();
+        
+        
+        data.setDate(data.getDate()+730);
+        data.setMonth(data.getMonth()+1)
+        data.setHours(data.getHours())
+
+        document.write(data)
+
+        document.write('<hr>')
+
+        d1.setDate(data.getDate());
+        d2.setDate(data.getDate()+10);
+        document.write(d1-d2);
+        document.write('<hr>')
+
+        data1 = new Date(2022, 6-1, 6);
+        data2 = new Date(2025, 6-1, 6);
+
+        
+
+        document.write(data1.getTime()+'<br>')
+        document.write(data2.getTime()+'<br>')
+
+        var mPAnos = 12*30*24*60*60*1000;
+        var diff = data2.getTime()-data1.getTime();
+        document.write(Math.round(diff / mPAnos))
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        idade = prompt('Digite o valor da idade: ')
+
+        valorIdade = parseInt(idade);
+
+        if(valorIdade >=0 && valorIdade < 15){
+            document.write('<h1> idade é ', valorIdade,' uma criança <h1>')
+        }else if(valorIdade >=15 && valorIdade < 30){
+            document.write('<h1> idade é ', valorIdade,' um Jovem <h1>')
+           
+        }else if(valorIdade >=30 && valorIdade < 60){
+            document.write('<h1> idade é ', valorIdade,' um adulto <h1>')
+            
+        }
+        else if (valorIdade >= 60){
+            document.write('<h1> idade é ', valorIdade,' um idoso <h1>')
+            
+        } else{
+            document.write('Inválido')
+        }
+    </script>
+</body>
+</html>

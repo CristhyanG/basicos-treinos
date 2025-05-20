@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .classe1{
+        background: red;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 900;
+        width: 500px;
+        height: 500px;
+
+    }
+    .classe2{
+        background: violet;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 200;
+        width: 500px;
+        height: 500px;
+    }
+    
+</style>
+    
+<script>
+    function modificaClasse(classe){
+        document.getElementById('quadrado').className = classe
+    }
+</script>
+<body>
+    <h3>Escolha a classe</h3>
+    <button onclick="modificaClasse('classe1')">Classe 1</button>
+    <button onclick="modificaClasse('classe2')">Classe 2</button>
+    <div id="quadrado">Visualize</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nota = prompt('Digite a nota');
+        var falta = prompt('Digite a quantidade de faltas');
+
+        var faltaInt = parseInt(falta);
+        var notaInt = parseInt(nota);
+
+        var resultado = (faltaInt <= 15 && notaInt >= 5) ? 'Aprovado' : 'Reprovado';
+        document.write(resultado)
+    </script>
+</body>
+</html>

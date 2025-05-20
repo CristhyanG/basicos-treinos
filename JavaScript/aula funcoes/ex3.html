@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var valor1 = prompt('Digite primeiro número');
+        var operacao = prompt('Soma ou Subtração')
+        var valor2 = prompt('Digite segundo número');
+        //tentativa callback fracassada
+       /* var processamento = (operacao) =>{
+            if(operacao == 'Soma' || operacao == 'soma'){
+                return soma(valor1, valor2)
+            }else if(operacao = 'Subtração' || 'subtração'){
+                sub(valor1, valor2)
+            }
+        }
+        var soma = function(a, b){
+            res = a + b;
+            return(res)
+        }
+        var sub = function(a, b){
+            document.write(a-b)
+        }*/
+
+        function calculo(valor1, valor2, operacao){
+            var res = 0;
+            if(operacao == 'Soma' || operacao == 'soma'){
+                var res = parseInt(valor1) + parseInt(valor2);
+            }else if(operacao = 'Subtração' || 'subtração'){
+                var res = parseInt(valor1) - parseInt(valor2);
+            }
+            return res;
+            
+        }   
+        document.write('O resultado é '+calculo(valor1, valor2, operacao))
+        
+    </script>
+</body>
+</html>

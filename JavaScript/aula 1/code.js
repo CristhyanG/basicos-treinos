@@ -1,0 +1,1 @@
+document.getElementById('switch').value = 'Oi';
